@@ -16,7 +16,7 @@ const useGenres = () => useQuery({
   queryFn: apiClient.getAll,
   staleTime: 24*60*60*100, //24hr
   //we set the initalData to the genres static data we have and since we are using the FetchResponse interface we must make the initial data have the same interface
-  initialData: {count:genres.length, results: genres}
+  //initialData: genres
 })
 
 export default useGenres;
